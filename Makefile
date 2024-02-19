@@ -5,6 +5,7 @@ CFLAGS = -W -g
 
 all : tests.o rsa.o
 	$(CC) $(CFLAGS) -o $(EXEC) $^
+	#./rsa p q m
 
 clear : tests.o rsa.o
 	clear
