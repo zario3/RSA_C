@@ -25,11 +25,12 @@ int premiers(int a, int b){
 
 /*Choix de e*/
 int e(int phi_n){
-    int res = phi_n*3/4;
+    int res = phi_n / 6;
     while (!(premiers(res,phi_n)))
         res++;
     return res;
 }
+
 
 
 /*
@@ -136,5 +137,3 @@ void rsa_c_d(int* mc, int size_m, int d, int n){
     for (int i =0; i<size_m; i++)
         mc[i] = rsa_decipher_bloc(mc[i],d, n);
 }
-
-
